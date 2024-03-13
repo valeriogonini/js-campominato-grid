@@ -22,13 +22,17 @@ ButtonPlay.addEventListener("click", function () {
         cellElement.innerHTML = num
 
         CellGrid.append(cellElement)
-        // // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro 
-        // ed emetto un messaggio in console con il numero della cella cliccata.
+        // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro 
 
         cellElement.addEventListener("click", function () {
-            console.log(num);
 
             cellElement.classList.toggle("bg-blue")
+
+
+            // ed emetto un messaggio in console con il numero della cella cliccata.
+
+            console.log(num);
+
 
         })
     }
