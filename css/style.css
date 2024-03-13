@@ -14,6 +14,14 @@
     font-size: 20px;
 
 }
+select{
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px 25px;
+    background-color: lightgray;
+    font-weight: bold;
+}
 .play{
     border-radius: 15px;
     cursor: pointer;
@@ -33,13 +41,14 @@
 }
 
 .container {
-    max-width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 }
 
 .grid-cell {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+
+
 }
 
 .cell {
@@ -47,7 +56,7 @@
     color: brown;
     border: 2px solid rgb(61, 55, 55);
     aspect-ratio: 1 / 1;
-    width: calc(100% / 10);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,4 +66,16 @@
 
 .bg-blue {
     background-color: rgb(17, 17, 137);
+}
+.easy{
+   grid-template-columns: repeat(10,1fr);
+}
+.medium{
+    grid-template-columns: repeat(9,1fr);
+   
+
+}
+.hard{
+    grid-template-columns: repeat(7,1fr);
+   
 }
