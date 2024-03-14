@@ -21,18 +21,24 @@ ButtonPlay.addEventListener("click", function () {
 
     let size;
 
+    CellGrid.innerHTML = ""
 
     if (Select.value === "difficolta1") {
         size = 10
         CellGrid.classList.add("easy")
+        CellGrid.classList.remove("medium", "hard")
 
     } else if (Select.value === "difficolta2") {
         size = 9
         CellGrid.classList.add("medium")
+        CellGrid.classList.remove("easy", "hard")
+
 
     } else {
         size = 7
         CellGrid.classList.add("hard")
+        CellGrid.classList.remove("medium", "easy")
+
 
     }
 
